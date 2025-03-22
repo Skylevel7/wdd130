@@ -1,0 +1,22 @@
+nav a {
+    color: yellowgreen;
+    display: inline-block;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    background-color: aquamarine;
+}
+footer {
+
+}
