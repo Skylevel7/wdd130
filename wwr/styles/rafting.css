@@ -1,62 +1,64 @@
-.root {
-    --primary-color: 7BDFF2;
-    --secondary-color: 5C7457;
-    --accent1-color: F5EFFF;
-    --accent2-color: DBAD6A;
-    --heading-font: 'Luckiest Guy', cursive;
-    --text-font: Satisfy;
+/* Root */
+:root {
+    --primary-color: #7BDFF2;
+    --secondary-color: #5C7457;
+    --text-color: #F5EFFF;
+    --background-color: #DBAD6A;
+    --font-family: 'specify', sans-serif;
 }
-    
+
+/* General */
 body {
-    font-family: var(--text-font);
-    color: var(--accent1-color);
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: var(--secondary-color);
+    align-items: center;
+    padding: 20px;
+    background: var(--primary-color);
 }
-header img {
-    width: 100px;
-}
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-    text-decoration: none;
 
+header img {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero */
 .hero {
     position: relative;
     text-align: center;
+    color: white;
 }
-.hero img {
-    display: block;
+
+.hero-image {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
 }
 
 .hero h1 {
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 119, 182, 0.7);
-    color: white;
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -64,22 +66,54 @@ p {
 .hero article {
     position: absolute;
     bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(72, 202, 228, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    max-width: 80%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 300px;
 }
 
 .hero article img {
-    float: right;
     width: 100px;
-    margin-left: 15px;
-article {
-    background-color: aquamarine;
+    float: right;
+    border-radius: 50%;
+    margin-left: 10px;
 }
-footer {
 
+/* History */
+.history, .adventure {
+    text-align: center;
+    padding: 30px 10%;
+}
+
+/* Adventure */
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery img {
+    width: 18%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
 }
