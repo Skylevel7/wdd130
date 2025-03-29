@@ -17,19 +17,28 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: auto 1fr auto;
     align-items: center;
     padding: 20px;
     background: var(--primary-color);
 }
 
-header img {
+header img { 
     height: 50px;
+} 
+
+nav ul {
+    display:flex;
+    list-style-type: nane
+    padding: 0;
+    margin: 0;
 }
 
+nav ul li {
+    margin: 0.5em;
+}
 nav a {
-    margin: 0 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -90,7 +99,7 @@ nav a:hover {
 .adventure-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -102,15 +111,17 @@ nav a:hover {
 
 /* Footer */
 footer {
-    text-align: center;
+    display: flex;    
+    justtify-content: space-between;
+    align-items: center;
     padding: 20px;
     background: var(--primary-color);
     color: white;
 }
 
 footer .social-icons a {
-    margin: 0 10px;
-    text-decoration: none;
+    display: flex;
+    gap: 15px;
 }
 
 footer .social-icons img {
