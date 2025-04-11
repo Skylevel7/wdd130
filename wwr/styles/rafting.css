@@ -1,7 +1,7 @@
 /* Root Variables */
 :root {
     --primary-color: #1a73e8;
-    --secondary-color: #ff6600;
+    --secondary-color: #e64a19;
     --text-color: #333;
     --background-color: #f8f9fa;
     --font-family: 'Roboto', sans-serif;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: #ffd700
 }
 
 /* Hero Section */
